@@ -1,1 +1,1 @@
-web: gunicorn django.forum.wsgi 
+web: gunicorn django.forum_wsgi --log-file-
