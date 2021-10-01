@@ -83,25 +83,26 @@ WSGI_APPLICATION = 'django_forum.wsgi.application'
 
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
 # DATABASES = {
 #     'default': {
-#         #'ENGINE': 'django.db.backends.sqlite3',
-#         #'NAME': BASE_DIR / 'db.sqlite3',
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'debs0feebrtk28',
-#         'USER': 'bvnjkalqeilzja',
-#         'HOST': 'ec2-44-199-26-122.compute-1.amazonaws.com',
-#         'PORT': 5432,
-#         'PASSWORD': 'e1ae52306fe343b12c1c8d9393f1281adb599da5f9cdba11c687e71b5017bb67',
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
+ DATABASES = {
+     'default': {
+         #'ENGINE': 'django.db.backends.sqlite3',
+         #'NAME': BASE_DIR / 'db.sqlite3',
+         'ENGINE': 'django.db.backends.postgresql',
+         'NAME': 'debs0feebrtk28',
+         'USER': 'dfwliejjoskbgv',
+         'HOST': 'ec2-18-235-4-83.compute-1.amazonaws.com',
+         'PORT': 5432,
+         'PASSWORD': '1afe5bcdb7144aa276ac11edf6aca5ad0aa84e7074bc943f9ff7cdd08810290e',
+     }
+ 
+ }
 
 
 # Password validation
