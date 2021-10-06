@@ -30,7 +30,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-)ku1f3-&=olhe=uxaxn)!)d%hykwjvowi1zln($32=k4-el@4f'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -84,26 +84,26 @@ WSGI_APPLICATION = 'django_forum.wsgi.application'
 
 
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
-     'default': {
-         #'ENGINE': 'django.db.backends.sqlite3',
-         #'NAME': BASE_DIR / 'db.sqlite3',
-         'ENGINE': 'django.db.backends.postgresql',
-         'NAME': 'dv4ll3b81efud',
-         'USER': 'dfwliejjoskbgv',
-         'HOST': 'ec2-18-235-4-83.compute-1.amazonaws.com',
-         'PORT': 5432,
-         'PASSWORD': '1afe5bcdb7144aa276ac11edf6aca5ad0aa84e7074bc943f9ff7cdd08810290e',
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
- 
 }
+
+# DATABASES = {
+#      'default': {
+#          #'ENGINE': 'django.db.backends.sqlite3',
+#          #'NAME': BASE_DIR / 'db.sqlite3',
+#          'ENGINE': 'django.db.backends.postgresql',
+#          'NAME': 'dv4ll3b81efud',
+#          'USER': 'dfwliejjoskbgv',
+#          'HOST': 'ec2-18-235-4-83.compute-1.amazonaws.com',
+#          'PORT': 5432,
+#          'PASSWORD': '1afe5bcdb7144aa276ac11edf6aca5ad0aa84e7074bc943f9ff7cdd08810290e',
+#     }
+ 
+# }
 # import dj_database_url
 # db_from_env = dj_database_url.config(conn_max_age=600)
 # DATABASES['default'].update(db_from_env)
